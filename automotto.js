@@ -2,9 +2,9 @@ const { openBrowser, goto, write, click, repl } = require("taiko");
 (async () => {
   try {
     await openBrowser();
-    await goto("google.com");
+    await goto("https://app.timemoto.com/");
     await write("taiko test automation");
-    await click("Google Search");
+    //await click("Google Search");
 
     // Launchs the REPL after executing
     // the commands above
