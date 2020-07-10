@@ -1,0 +1,14 @@
+{
+  "name": "automotto",
+  "version": "1.0.0",
+  "description": "This will automatically check in and check out Timemotto app for you",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx taiko automotto.js --observe"
+  },
+  "author": "Vicente Queiroz",
+  "license": "ISC",
+  "dependencies": {
+    "taiko": "^1.0.13"
+  }
+}
