@@ -11,6 +11,10 @@ const { email, password } = require("./credentials");
     await write(password, into(textBox({ id: "form-login-password" })));
     await click("Login");
 
+    // Timememotto home
+    await click("Timer");
+    await click(into($("//button[@name='ClockInStatus1']")));
+    await clearPermissionOverrides();
     // Launchs the REPL after executing
     // the commands above
 
@@ -21,3 +25,9 @@ const { email, password } = require("./credentials");
     closeBrowser();
   }
 })();
+
+{
+  /* <button name="ClockInStatus1" class="clockinstatusbutton red" value="1">Stop</button>
+
+<button name="ClockInStatus1" class="clockinstatusbutton green" value="0">Start</button> */
+}
